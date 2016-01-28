@@ -1,0 +1,16 @@
+sdi_front_homepage:
+    path:     /
+    defaults: { _controller: SDIFrontBundle:Front:index }
+sdi_front_about:
+    path:     /about
+    defaults: { _controller: SDIFrontBundle:Front:about }
+
+sdi_front_gallery:
+    path:     /gallery
+    defaults: { _controller: SDIFrontBundle:Front:gallery }
+sdi_front_testimonials:
+    path:     /testimonials
+    defaults: { _controller: SDIFrontBundle:Front:testimonials }
+sdi_front_contact:
+    path:     /contacts
+    defaults: { _controller: SDIFrontBundle:Front:contact }

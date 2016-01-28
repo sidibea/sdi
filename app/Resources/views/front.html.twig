@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- RabinsXP.com HTML5 Templates -->
+<head>
+    <meta charset="utf-8">
+
+    <title>{% block title %} {% endblock %} | Soudou Design International</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- http://www.456bereastreet.com/archive/201209/tell_css_that_javascript_is_available_asap/ -->
+    <script>
+        document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');
+    </script>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('front/style.css') }}">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="{{ asset('front/rs-plugin/css/settings.css') }}">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="{{ asset('front/css/font-awesome-ie7.min.css') }}">
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script src="{{ asset('front/js/html5shiv.min.js') }}"></script>
+    <![endif]-->
+    <script src="{{ asset('front/js/modernizr.custom.js') }}"></script>
+
+</head>
+<body id="{% block bodyId %}custom1 {% endblock %}" class="{% block bodyClass %}home {% endblock %}">
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status">&nbsp;
+    </div>
+</div>
+<div id="wrapper">
+    {% block panel %}
+        {% include('includes/panel.html.twig') %}
+    {% endblock %}
+
+
+
+    <div id="topbar">
+        {% block topnav %}
+            {% include('includes/top_nav.html.twig') %}
+        {% endblock %}
+
+    </div>
+
+    <header id="dmheader">
+        {% block header %}
+            {% include('includes/header.html.twig') %}
+        {% endblock %}
+
+    </header><!-- /dmheader -->
+     {% block content %} {% endblock %}
+
+    <div id="dmfooter">
+        {% block footer %}
+            {% include('includes/footer.html.twig') %}
+        {% endblock %}
+    </div><!-- dmfooter -->
+
+    <div id="lastcontainer">
+        <div class="container">
+            <p>Copyright © {{ "now" | date('Y') }} Soudou Design International .</p>
+        </div><!-- /container -->
+    </div><!-- /lastcontainer -->
+
+    <div class="dmtop">Scroll to Top</div>
+</div><!-- /wrapper -->
+
+
+<!-- ALL PLUGINS -->
+<script src="{{ asset('front/js/jquery.js') }}"></script>
+<!-- RS PLUGINS -->
+<script type="text/javascript" src="{{ asset('front/rs-plugin/js/jquery.themepunch.plugins.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('front/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
+<script type="text/javascript">
+    var revapi;
+    jQuery(document).ready(function() {
+        revapi = jQuery('.tp-banner').revolution(
+                {
+
+                    delay:9000,
+                    startwidth:1170,
+                    startheight:530,
+                    hideThumbs:10,
+                    fullWidth:"on",
+                    forceFullWidth:"on",
+                    navigationType:"none",
+                    navigationStyle:"round",
+                    touchenabled:"on",
+                    onHoverStop:"off",
+                    shadow:0,
+                    stopLoop:"off",
+                    stopAfterLoops:-1,
+                    stopAtSlide:-1,
+                    shuffle:"off",
+                });
+    });
+</script>
+
+<script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('front/js/jquery.prettyPhoto.js') }}"></script>
+<script src="{{ asset('front/js/grid.js') }}"></script>
+<script src="{{ asset('front/js/pulloutpanel.min.js') }}"></script>
+<script src="{{ asset('front/js/superfish.js') }}"></script>
+<script src="{{ asset('front/js/jquery.fs.naver.min.js') }}"></script>
+<script src="{{ asset('front/js/jquery.flexslider.min.js') }}"></script>
+<script src="{{ asset('front/js/jquery.isotope.min.js') }}"></script>
+<script src="{{ asset('front/js/custom.js') }}"></script>
+<!-- Preloader -->
+<script type="text/javascript">
+    $(window).load(function() {
+        $('#status').delay(800).fadeOut('slow');
+        $('#preloader').delay(800).fadeOut('slow');
+        $('body').delay(800).css({'overflow':'visible'});
+    })
+</script>
+</body>
+
+<!-- RabinsXP.com HTML5 Templates -->
+</html>

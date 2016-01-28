@@ -1,0 +1,100 @@
+{% extends "SDIFrontBundle::layout.html.twig" %}
+{% block title %} Testimonials{% endblock %}
+{% block bodyId %} layout {% endblock %}
+{% block content %}
+    <section id="blogwrap">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="blog-second-item single">
+                    <h3 class="post-title">Ils parlent de nous</h3>
+                    <p>This is an example service page. It’s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this. Most people start with an About page that introduces them to potential site visitors. It might say something like this</p>
+                    <hr>
+
+                    <div class="row-fluid testimonials3">
+                        <div class="premium-testimonials-widget span6">
+                            <div class="testimonial-widget-wrap">
+                                <div class="post-widget">
+                                    <div class="widget-thumbnail">
+                                        <a href="#" rel="nofollow external" title="">
+                                            <img width="50" height="50" src="{{ asset('front/demos/02_member.png') }}" alt="" title="" /></a>
+                                    </div><!-- end .widget-thumbnail -->
+                                    <div class="widget-entry-content">
+                                        <p>This is an example service page. It’s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this. </p>
+                                    </div><!-- end .widget-entry-content -->
+                                    <div class="widget-entry-title">
+                                        <h4><a href="#" rel="nofollow external" title="">Amly WILSON</a> <span>Yahoo Magazine</span></h4>
+                                    </div><!-- end .widget-entry-title -->
+                                </div><!-- end .post-widget -->
+                            </div><!-- testimonial-widget-wrap -->
+                        </div><!-- premium-testimonials-widget -->
+
+                        <div class="premium-testimonials-widget span6">
+                            <div class="testimonial-widget-wrap">
+                                <div class="post-widget">
+                                    <div class="widget-thumbnail">
+                                        <a href="#" rel="nofollow external" title="">
+                                            <img width="50" height="50" src="{{ asset('front/demos/01_member.png') }}" alt="" title="" /></a>
+                                    </div><!-- end .widget-thumbnail -->
+                                    <div class="widget-entry-content">
+                                        <p>Most people start with an About page that introduces them to potential site visitors. It might say something like this. Most people start with an About page that introduces them to potential site visitors. It might say something like this</p>
+                                    </div><!-- end .widget-entry-content -->
+                                    <div class="widget-entry-title">
+                                        <h4><a href="#" rel="nofollow external" title="">Bred CLINTON</a> <span>WordPress Blog</span></h4>
+                                    </div><!-- end .widget-entry-title -->
+                                </div><!-- end .post-widget -->
+                            </div><!-- testimonial-widget-wrap -->
+                        </div><!-- premium-testimonials-widget -->
+                    </div><!-- row-fluid -->
+
+                    <hr>
+
+                    <div class="testimonial1 row-fluid">
+                        <div class="tester dmx span4">
+                            <h1>John DOE</h1>
+                            <blockquote class="pull-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+                            </blockquote>
+                            <img class="img-circle" src="{{ asset('front/demos/01_member.png') }}" alt="">
+                        </div>
+
+                        <div class="tester dmx span4">
+                            <h1>Jenny DOE</h1>
+                            <blockquote class="pull-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+                            </blockquote>
+                            <img class="img-circle" src="{{ asset('front/demos/02_member.png') }}" alt="">
+                        </div>
+
+                        <div class="tester dmx span4">
+                            <h1>Juniour DOE</h1>
+                            <blockquote class="pull-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis.</p>
+                            </blockquote>
+                            <img class="img-circle" src="{{ asset('front/demos/03_member.png') }}" alt="">
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="testimonial2">
+                        <div class="flexslider">
+                            <div class="testimonials testimonial1">
+                                <ul class="slides">
+                                    <li>
+                                        <img class="img-circle" src="{{ asset('front/demos/03_member.png') }}" alt="">
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using...<span>"Adriana JOHNSEN"</span></p></li>
+                                    <li>
+                                        <img class="img-circle" src="{{ asset('front/demos/01_member.png') }}" alt="">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span>"John DOE"</span></p></li>
+                                    <li>
+                                        <img class="img-circle" src="{{ asset('front/demos/02_member.png') }}" alt="">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority. <span>"John DOE"</span></p></li>
+                                </ul>
+                            </div><!-- /testimonials -->
+                        </div><!-- /flexslider -->
+                    </div>
+
+                </div><!-- /blog-second-item -->
+            </div><!-- end span12 -->
+        </div><!-- /row-fluid -->
+    </section><!-- /container -->
+{% endblock %}

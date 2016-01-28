@@ -1,0 +1,4 @@
+sdi_front:
+    resource: "@SDIFrontBundle/Resources/config/routing.yml"
+    prefix:   /
+

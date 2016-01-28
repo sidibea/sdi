@@ -1,0 +1,158 @@
+{% extends "SDIFrontBundle::layout.html.twig" %}
+{% block title %} Gallery {% endblock %}
+{% block bodyId %} layout {% endblock %}
+{% block content %}
+
+    <div class="container">
+        <section id="portfoliowrap">
+            <div class="text-center general-title">
+                <h2>Check our Latest Works</h2>
+                <p class="sub-title">The Flayz HTML5 template comes with unlimited portfolio page template and element examples!</p>
+            </div>
+            <div id="portfolio">
+                <div class="dm-portfolio">
+                    <nav class="portfolio-filter">
+                        <ul>
+                            <li><a href="#" data-filter="*">All Works (32)</a></li>
+                            <li><a href="#" data-filter=".web-design">Web Design</a></li>
+                            <li><a href="#" data-filter=".development">Development</a></li>
+                            <li><a href="#" data-filter=".photoshop">Photoshop</a></li>
+                            <li><a href="#" data-filter=".video">Screens</a></li>
+                        </ul>
+                    </nav>
+                </div> <!--/dm portfolio -->
+
+                <div class="portfolio-container text-center">
+                    <div class="portfolio portfolio-centered">
+
+                        <div class="portfolio-item web-design development">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/1.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>An Examle Slideshow Portfolio Item</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> web design - development</p>
+                        </div>
+
+                        <div class="portfolio-item photoshop">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/2.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Illustration of chalkboard with chalk.</h4>
+                            <p class="portfolio-categories">photoshop</p>
+                        </div>
+
+                        <div class="portfolio-item development video">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/3.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Illustrations made for Best and M and M’s newest</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> development - video</p>
+                        </div>
+
+                        <div class="portfolio-item web-design">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/4.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>MediaMonks Mascot (Youtube Video)</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> web design</p>
+                        </div>
+
+                        <div class="portfolio-item video">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/5.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Illustrations for Kinder Surprise Project.</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> video</p>
+                        </div>
+
+                        <div class="portfolio-item video photoshop">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/6.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Black Design Hand Made Work</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> video - photoshop</p>
+                        </div>
+
+                        <div class="portfolio-item web-design">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/13.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>KLM – Be My Guest</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> web design</p>
+                        </div>
+
+                        <div class="portfolio-item development">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/12.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Illustration made for WIRED magazine</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> development</p>
+                        </div>
+
+                        <div class="portfolio-item web-design video">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="{{ asset('front/demos/14.jpg') }}" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>Illustration for Route Mobiel</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> web design - video</p>
+                        </div>
+
+                        <div class="portfolio-item photoshop">
+                            <div class="image-container">
+                                <a href="portfolio-single-1.html">
+                                    <img src="demos/10_demo_big.jpg" alt="">
+                                    <span class="zoom"></span>
+                                </a>
+                            </div>
+                            <h4>An Example Audio Portfolio Item</h4>
+                            <p class="portfolio-categories"><i class="icon-folder-open-alt"></i> photoshop</p>
+                        </div>
+                    </div> <!-- End Portfolio -->
+
+
+                </div> <!-- End Portfolio Container -->
+            </div> <!-- End Portfolio -->
+
+            <div class="pagination text-center">
+                <ul>
+                    <li class="disabled"><a href="#">«</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">»</a></li>
+                </ul>
+            </div>
+
+        </section><!-- /container -->
+    </div><!-- /box -->
+
+{% endblock %}

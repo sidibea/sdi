@@ -1,0 +1,40 @@
+{% extends "SDIFrontBundle::layout.html.twig" %}
+{% block title %} Contactez Nous {% endblock %}
+{% block bodyId %} layout {% endblock %}
+{% block content %}
+    <section id="blogwrap">
+        <div class="row-fluid">
+            <div class="span12">
+
+                <div class="blog-second-item single">
+                    <iframe class="google-map" src="http://maps.google.com/?ie=UTF8&amp;ll=40.748151,-73.985131&amp;spn=0.012355,0.021007&amp;t=m&amp;z=16&amp;output=embed"></iframe>
+
+                    <h3 class="post-title">Contactez Nous</h3>
+
+
+                    <h4>Formulaire de contact</h4>
+
+
+                    <form id="contact">
+                        <label for="name">Nom</label>
+                        <input id="name" name="name" class="span4" required type="text">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" class="span4" required type="text">
+                        <label for="website">Site web</label>
+                        <input id="website" name="website" class="span4" type="text">
+                        <label for="comment">Message</label>
+                        <textarea id="comment" name="comment" required class="span9" cols="45" rows="8"></textarea>
+                        <p>
+                            <button class="btn btn-general" type="submit">Envoyer</button>
+                        </p>
+                    </form>
+
+                </div><!-- /blog-second-item -->
+
+            </div><!-- end span8 -->
+
+
+
+        </div><!-- /row-fluid -->
+    </section><!-- /container -->
+{% endblock %}
